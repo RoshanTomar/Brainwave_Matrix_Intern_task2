@@ -1,0 +1,233 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Hidden by default */
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    margin-left: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+/* Banner Slider */
+.banner {
+    overflow: hidden;
+    background: linear-gradient(45deg, #ff9900, #ff0066);
+    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    animation: slide 15s infinite linear;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+@keyframes slide {
+    0%, 33% {transform: translateX(0);}
+    34%, 66% {transform: translateX(-100%);}
+    67%, 100% {transform: translateX(-200%);}
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #ff0066, #6600ff);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.shop-now-btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Products */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+.price {
+    color: #ff0066;
+    font-size: 1.2em;
+}
+
+.add-to-cart {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cart Section */
+.cart {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.cart ul {
+    list-style-type: none;
+}
+
+.total-price {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Product List Container */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to the next line when space is not sufficient */
+    justify-content: center; /* Center items in the row */
+    gap: 20px; /* Space between products */
+}
+
+/* Individual Product Styling */
+.product {
+    flex: 1 1 22%; /* Approximately 4 products per row */
+    box-sizing: border-box;
+    text-align: center; /* Center-align product text */
+    margin: 10px;
+}
+
+/* Image Styling */
+.product img {
+    width: 100%;
+    max-width: 150px; /* Set a fixed maximum width for images */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Crop the image to fill the fixed dimensions */
+    margin: 0 auto; /* Center the image within its container */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 45%; /* Two products per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        flex: 1 1 90%; /* One product per row on very small screens */
+    }
+}

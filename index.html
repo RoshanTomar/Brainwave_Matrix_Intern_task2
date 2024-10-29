@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Icons -->
+</head>
+<body>
+   
+    <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#kids">Kids</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</div>
+
+
+    <!-- Header -->
+    <header>
+        <button class="sidebar-toggle" id="sidebar-toggle">
+            <i class="fas fa-bars"></i> <!-- Sidebar Toggle Icon -->
+        </button>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">🛒 (<span id="cart-count">0</span>)</div>
+    </header>
+
+    <!-- Banner Slider -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide">🎉 Special Festive Deals: 50% Off! 🎉</div>
+            <div class="slide">💥 Buy One Get One Free on Select Products! 💥</div>
+            <div class="slide">🛍️ Free Shipping on Orders Over ₹50! 🛍️</div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to MyShop!</h1>
+        <p>Discover the best products and deals right here!</p>
+        <a href="#products" class="shop-now-btn">Shop Now</a>
+    </section>
+
+
+    <!-- Products Section -->
+<section id="products" class="products">
+    <h2>Our Products</h2>
+
+    <!-- Men Products -->
+    <h3 id="men">Men's Apparel</h3>
+    <div class="product-list">
+        <div class="product">
+            <img src="./images/men1.jpg" alt="Men's Product 1">
+            <h3>Men's Product 1</h3>
+            <p class="price">₹499</p>
+            <button class="add-to-cart" data-product-id="1" data-product-name="Men's Product 1" data-product-price="499">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men2.jpg" alt="Men's Product 2">
+            <h3>Men's Product 2</h3>
+            <p class="price">₹799</p>
+            <button class="add-to-cart" data-product-id="2" data-product-name="Men's Product 2" data-product-price="799">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men3.jpg" alt="Men's Product 3">
+            <h3>Men's Product 3</h3>
+            <p class="price">₹649</p>
+            <button class="add-to-cart" data-product-id="3" data-product-name="Men's Product 3" data-product-price="649">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men4.jpg" alt="Men's Product 4">
+            <h3>Men's Product 4</h3>
+            <p class="price">₹999</p>
+            <button class="add-to-cart" data-product-id="4" data-product-name="Men's Product 4" data-product-price="999">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men5.jpg" alt="Men's Product 5">
+            <h3>Men's Product 5</h3>
+            <p class="price">₹599</p>
+            <button class="add-to-cart" data-product-id="5" data-product-name="Men's Product 5" data-product-price="599">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men6.jpg" alt="Men's Product 6">
+            <h3>Men's Product 6</h3>
+            <p class="price">₹899</p>
+            <button class="add-to-cart" data-product-id="6" data-product-name="Men's Product 6" data-product-price="899">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men7.jpg" alt="Men's Product 7">
+            <h3>Men's Product 7</h3>
+            <p class="price">₹749</p>
+            <button class="add-to-cart" data-product-id="7" data-product-name="Men's Product 7" data-product-price="749">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/men8.jpg" alt="Men's Product 8">
+            <h3>Men's Product 8</h3>
+            <p class="price">₹1099</p>
+            <button class="add-to-cart" data-product-id="8" data-product-name="Men's Product 8" data-product-price="1099">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Women's Products -->
+    <h3 id="women">Women's Apparel</h3>
+    <div class="product-list">
+        <div class="product">
+            <img src="./images/women1.jpg" alt="Women's Product 1">
+            <h3>Women's Product 1</h3>
+            <p class="price">₹499</p>
+            <button class="add-to-cart" data-product-id="9" data-product-name="Women's Product 1" data-product-price="499">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women2.jpg" alt="Women's Product 2">
+            <h3>Women's Product 2</h3>
+            <p class="price">₹799</p>
+            <button class="add-to-cart" data-product-id="10" data-product-name="Women's Product 2" data-product-price="799">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women3.jpg" alt="Women's Product 3">
+            <h3>Women's Product 3</h3>
+            <p class="price">₹649</p>
+            <button class="add-to-cart" data-product-id="11" data-product-name="Women's Product 3" data-product-price="649">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women4.jpg" alt="Women's Product 4">
+            <h3>Women's Product 4</h3>
+            <p class="price">₹999</p>
+            <button class="add-to-cart" data-product-id="12" data-product-name="Women's Product 4" data-product-price="999">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women5.jpg" alt="Women's Product 5">
+            <h3>Women's Product 5</h3>
+            <p class="price">₹599</p>
+            <button class="add-to-cart" data-product-id="13" data-product-name="Women's Product 5" data-product-price="599">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women6.jpg" alt="Women's Product 6">
+            <h3>Women's Product 6</h3>
+            <p class="price">₹899</p>
+            <button class="add-to-cart" data-product-id="14" data-product-name="Women's Product 6" data-product-price="899">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women7.jpg" alt="Women's Product 7">
+            <h3>Women's Product 7</h3>
+            <p class="price">₹749</p>
+            <button class="add-to-cart" data-product-id="15" data-product-name="Women's Product 7" data-product-price="749">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/women8.jpg" alt="Women's Product 8">
+            <h3>Women's Product 8</h3>
+            <p class="price">₹1099</p>
+            <button class="add-to-cart" data-product-id="16" data-product-name="Women's Product 8" data-product-price="1099">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Kids' Products -->
+    <h3 id="kids">Kids' Apparel</h3>
+    <div class="product-list">
+        <div class="product">
+            <img src="./images/kids1.jpg" alt="Kids' Product 1">
+            <h3>Kids' Product 1</h3>
+            <p class="price">₹299</p>
+            <button class="add-to-cart" data-product-id="17" data-product-name="Kids' Product 1" data-product-price="299">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids2.jpg" alt="Kids' Product 2">
+            <h3>Kids' Product 2</h3>
+            <p class="price">₹399</p>
+            <button class="add-to-cart" data-product-id="18" data-product-name="Kids' Product 2" data-product-price="399">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids3.jpg" alt="Kids' Product 3">
+            <h3>Kids' Product 3</h3>
+            <p class="price">₹499</p>
+            <button class="add-to-cart" data-product-id="19" data-product-name="Kids' Product 3" data-product-price="499">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids4.jpg" alt="Kids' Product 4">
+            <h3>Kids' Product 4</h3>
+            <p class="price">₹199</p>
+            <button class="add-to-cart" data-product-id="20" data-product-name="Kids' Product 4" data-product-price="199">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids5.jpg" alt="Kids' Product 5">
+            <h3>Kids' Product 5</h3>
+            <p class="price">₹599</p>
+            <button class="add-to-cart" data-product-id="21" data-product-name="Kids' Product 5" data-product-price="599">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids6.jpg" alt="Kids' Product 6">
+            <h3>Kids' Product 6</h3>
+            <p class="price">₹799</p>
+            <button class="add-to-cart" data-product-id="22" data-product-name="Kids' Product 6" data-product-price="799">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids7.jpg" alt="Kids' Product 7">
+            <h3>Kids' Product 7</h3>
+            <p class="price">₹349</p>
+            <button class="add-to-cart" data-product-id="23" data-product-name="Kids' Product 7" data-product-price="349">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./images/kids8.jpg" alt="Kids' Product 8">
+            <h3>Kids' Product 8</h3>
+            <p class="price">₹899</p>
+            <button class="add-to-cart" data-product-id="24" data-product-name="Kids' Product 8" data-product-price="899">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="total-price">Total: ₹<span id="total-price">0</span></div>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyShop | Created by [Your Name]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
